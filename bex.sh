@@ -16,7 +16,7 @@ else
     filename=".bex-marker"
 fi
 
-base=$(./base.py $filename)
+base=$(./base.py "$filename")
 
-cd $base
+cd "$base"
 "$@"

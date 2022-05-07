@@ -9,4 +9,4 @@ fi
 
 base=$(./base.py venv)
 
-$base/venv/bin/python "$@"
+"$base"/venv/bin/python "$@"
