@@ -5,3 +5,4 @@ install:
 	cp base.py $(PREFIX)/pyex
 	cp s3vim.sh $(PREFIX)/s3vim
 	cp base.py $(PREFIX)/base
+	cp sandbox.sh $(PREFIX)/sandbox
