@@ -6,4 +6,5 @@ tempdir=$(mktemp -d)
 
 cd "$tempdir"
 "$SHELL"
-rm -r "$tempdir"
+
+trap 'rm -r $tempdir' EXIT

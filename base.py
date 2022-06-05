@@ -11,9 +11,9 @@ def find_base(filename):
     for search_dir in [cwd, *cwd.parents]:
         if (search_dir / filename).exists():
             return(search_dir)
-    else:
-        eprint(f"{filename} not found.")
-        sys.exit(1)
+
+    eprint(f"{filename} not found.")
+    sys.exit(1)
 
 
 def eprint(*args, **kwargs):
