@@ -3,10 +3,12 @@
 set -eu
 
 if [ "$#" -lt 1 ]; then
-    echo "Usage: pex <COMMAND>"
+    echo "Usage: pyex <COMMAND>"
     exit 1
 fi
 
-base=$(./base.py venv)
+base=$(base venv)
 
-"$base"/venv/bin/python "$@"
+command="$base/venv/bin/$1"
+shift 1
+"$command" "$*"
